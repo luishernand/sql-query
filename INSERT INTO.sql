@@ -1,0 +1,20 @@
+--INSERT INTO [dbo].[Employee]
+--([employee_name],[department_id])
+--VALUES
+--('Axel Romero',1)
+--, ('Roberto Mujica', 1)
+--, ('Alondra Rosa', 2)
+--, ('Roddrigo Lara', 3)
+--, ('Monica Galindo', 4)
+--, ('Rosario Galicia', NULL)
+--, ('Fernando Roa', 6)
+--, ('Paola Leon', NULL);
+
+--INSERT INTO [dbo].[Departments]
+--([department_name])
+--VALUES
+--('Sistemas'),
+--('Recursos Humanos'),
+--('Producción'),
+--('Ventas'),
+--('Compras');
