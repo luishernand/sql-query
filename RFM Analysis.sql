@@ -143,4 +143,20 @@ from
 	)x
 
 select * from vw_rfm
-where rfm_cell >=10
+where  1=1
+and CUSTOMERNAME = 'Mini Auto Werke'
+--and rfm_cell >=10
+
+select 
+		CUSTOMERNAME, 
+		sum(sales) MonetaryValue,
+		avg(sales) AvgMonetaryValue,
+		count(ORDERNUMBER) Frequency,
+		max(ORDERDATE) last_order_date--,
+		,DATEDIFF(DD, max(ORDERDATE), (select max(ORDERDATE) from sales)) as recenciente
+	
+from sales
+where CUSTOMERNAME = 'Mini Auto Werke'
+group by CUSTOMERNAME
+
+
